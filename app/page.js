@@ -2,6 +2,7 @@ import PageTransition from "@/components/animations/PageTransition";
 import Reveal from "@/components/animations/Reveal";
 
 import HeroSection from "@/components/home/HeroSection";
+import AboutSection from "@/components/home/AboutSection";
 import StatsSection from "@/components/home/StatsSection";
 import BranchesSection from "@/components/home/BranchesSection";
 import ServicesSection from "@/components/home/ServicesSection";
@@ -11,12 +12,17 @@ import TestimonialSection from "@/components/home/TestimonialSection";
 import FAQSection from "@/components/home/FAQSection";
 import MapSection from "@/components/home/MapSection";
 import CTASection from "@/components/home/CTASection";
+import ContactSection from "@/components/home/ContactSection";
 
 export default function HomePage() {
   return (
     <PageTransition>
 
       <HeroSection />
+
+      <Reveal>
+        <AboutSection />
+      </Reveal>
 
       <Reveal>
         <StatsSection />
@@ -52,6 +58,10 @@ export default function HomePage() {
 
       <Reveal>
         <CTASection />
+      </Reveal>
+
+      <Reveal>
+        <ContactSection />
       </Reveal>
 
     </PageTransition>

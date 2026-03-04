@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 export default function WhatsAppButton() {
-  const phoneNumber = "2348031234567"; // 🔴 Replace with real number (no +)
+  const phoneNumber = "2348033030008";
 
   const message = encodeURIComponent(
     "Hello Just Vision Eye Center, I would like to book an appointment."
@@ -11,13 +11,7 @@ export default function WhatsAppButton() {
 
   return (
     <motion.div
-      className="fixed bottom-6 right-6"
-      style={{
-        position: "fixed",
-        bottom: "24px",
-        right: "24px",
-        zIndex: 9999,
-      }}
+      className="fixed bottom-24 right-6 z-[9999]"
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 1, duration: 0.4 }}
@@ -42,7 +36,6 @@ export default function WhatsAppButton() {
           }}
           className="relative w-16 h-16 rounded-full bg-[#25D366] flex items-center justify-center shadow-premium hover:scale-105 transition-all duration-300"
         >
-          {/* Official WhatsApp SVG */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 32 32"

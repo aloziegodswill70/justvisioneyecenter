@@ -1,10 +1,8 @@
 "use client";
 
-import Link from "next/link";
-
 export default function BottomNav() {
-  const phoneNumber = "2348031234567"; // 🔴 Replace
-  const whatsappNumber = "2348031234567"; // 🔴 Replace
+  const phoneNumber = "2348033030008";
+  const whatsappNumber = "2348033030008";
 
   const message = encodeURIComponent(
     "Hello Just Vision Eye Center, I would like to book an appointment."
@@ -37,14 +35,16 @@ export default function BottomNav() {
           <span className="text-xs mt-1">WhatsApp</span>
         </a>
 
-        {/* BOOK */}
-        <Link
-          href="/appointment"
+        {/* BOOK APPOINTMENT → WHATSAPP */}
+        <a
+          href={`https://wa.me/${whatsappNumber}?text=${message}`}
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex flex-col items-center justify-center py-3 text-brand-primary"
         >
           <CalendarIcon />
           <span className="text-xs mt-1">Book</span>
-        </Link>
+        </a>
 
         {/* DIRECTIONS */}
         <a

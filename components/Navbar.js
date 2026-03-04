@@ -10,7 +10,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 20);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -19,34 +19,52 @@ export default function Navbar() {
 
   return (
     <>
-      {/* TOP TRUST BAR */}
-      <div className="bg-brand-dark text-white text-sm py-2">
+      {/* ============================= */}
+      {/* FIXED TOP TRUST BAR */}
+      {/* ============================= */}
+      <div className="fixed top-0 left-0 w-full z-[60] bg-brand-dark text-white text-sm py-2">
         <div className="container flex justify-between items-center">
-          <div>
-            📍 Ikeja, Lagos, Nigeria | 🕒 Mon–Sat 8AM–6PM
+          <div className="hidden md:block">
+            📍 Ikeja & Surulere, Lagos | 🕒 Mon–Sat 8AM–6PM
           </div>
-          <div>
-            📞 <a href="tel:+234XXXXXXXXXX">+234 XXX XXX XXXX</a>
+
+          <div className="mx-auto md:mx-0">
+            📞{" "}
+            <a
+              href="tel:+2348033030008"
+              className="hover:text-brand-secondary transition"
+            >
+              0803 303 0008
+            </a>
           </div>
         </div>
       </div>
 
+      {/* ============================= */}
       {/* PREMIUM NAVBAR */}
+      {/* ============================= */}
       <motion.nav
         initial={{ y: -80 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
-        className={`fixed w-full z-50 transition-all duration-500 ${
+        className={`fixed top-[36px] w-full z-50 transition-all duration-500 ${
           scrolled
-            ? "bg-white/80 backdrop-blur-xl shadow-soft"
-            : "bg-transparent"
+            ? "bg-white/95 backdrop-blur-md shadow-soft"
+            : "bg-white/90 backdrop-blur-sm"
         }`}
       >
         <div className="container flex justify-between items-center py-5">
 
-          {/* LOGO */}
-          <Link href="/" className="text-2xl font-bold text-brand-dark">
-            Just Vision
+          {/* LOGO + TEXT */}
+          <Link href="/" className="flex items-center gap-3">
+            <img
+              src="/images/justlogo.png"
+              alt="Just Vision Eye Center Logo"
+              className="h-10 w-auto"
+            />
+            <span className="text-2xl font-bold text-brand-dark">
+              Just Vision
+            </span>
           </Link>
 
           {/* DESKTOP MENU */}
@@ -58,12 +76,14 @@ export default function Navbar() {
             <NavLink href="/blog">Blog</NavLink>
             <NavLink href="/contact">Contact</NavLink>
 
-            <Link
-              href="/appointment"
+            <a
+              href="https://wa.me/2348033030008?text=Hello%20Just%20Vision%20Eye%20Center,%0A%0AI%20would%20like%20to%20book%20an%20appointment."
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-brand-primary text-white px-6 py-3 rounded-2xl shadow-soft hover:bg-brand-secondary transition-all duration-300"
             >
               Book Appointment
-            </Link>
+            </a>
           </div>
 
           {/* MOBILE BUTTON */}
@@ -85,12 +105,15 @@ export default function Navbar() {
               <NavLink href="/doctors">Doctors</NavLink>
               <NavLink href="/blog">Blog</NavLink>
               <NavLink href="/contact">Contact</NavLink>
-              <Link
-                href="/appointment"
+
+              <a
+                href="https://wa.me/2348033030008?text=Hello%20Just%20Vision%20Eye%20Center,%0A%0AI%20would%20like%20to%20book%20an%20appointment."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-brand-primary text-white px-6 py-3 rounded-2xl text-center"
               >
                 Book Appointment
-              </Link>
+              </a>
             </div>
           </div>
         )}

@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://justvisionseyecentre.com.ng/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Vision Eye Centre | Premium Eye Care</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./testimonial2_files/css2" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./testimonial2_files/all.min.css">
+
+    <style>
+        /* --- 1. CSS VARIABLES & RESET --- */
+        :root {
+            --primary-orange: #e65100; /* Deep Burnt Orange */
+            --secondary-orange: #ff9800; /* Bright Orange */
+            --gradient-orange: linear-gradient(135deg, #e65100 0%, #ff9800 100%);
+            --text-dark: #2c3e50;
+            --text-light: #607d8b;
+            --white: #ffffff;
+            --off-white: #f8f9fa;
+            --section-padding: 90px 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* --- 2. UTILITY CLASSES --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--gradient-orange);
+            color: var(--white);
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+            box-shadow: 0 10px 20px rgba(230, 81, 0, 0.2);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(230, 81, 0, 0.4);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+
+        .section-header .divider {
+            height: 4px;
+            width: 80px;
+            background: var(--gradient-orange);
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+
+        /* --- 3. HEADER & NAV --- */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            padding: 10px 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 400;
+            position: relative;
+        }
+
+        .nav-links a:not(.btn)::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: var(--primary-orange);
+            transition: 0.3s;
+        }
+
+        .nav-links a:not(.btn):hover::after {
+            width: 100%;
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 1.8rem;
+            color: var(--primary-orange);
+            cursor: pointer;
+        }
+
+        /* --- 4. HERO SECTION --- */
+        .hero {
+            padding-top: 150px;
+            padding-bottom: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(to right, #fff 50%, #fffaf5 50%);
+            overflow: hidden;
+        }
+
+        .hero-text {
+            flex: 1;
+            padding-right: 60px;
+        }
+
+        .hero-text h1 {
+            font-size: 3.8rem;
+            margin-bottom: 25px;
+            color: var(--text-dark);
+        }
+
+        .hero-text .highlight {
+            background: -webkit-linear-gradient(0deg, #e65100, #ff9800);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-text p {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 35px;
+            max-width: 550px;
+        }
+
+        .hero-trust {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 25px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--primary-orange);
+        }
+
+        .hero-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 20px 0 0 20px;
+            box-shadow: -30px 30px 0 rgba(230, 81, 0, 0.1);
+        }
+
+        /* --- 5. STATS STRIP --- */
+        .stats-strip {
+            background: var(--off-white);
+            padding: 50px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .stats-grid {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .stat-box i {
+            font-size: 2rem;
+            color: var(--primary-orange);
+            margin-bottom: 10px;
+        }
+
+        .stat-box h4 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .stat-box p {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        /* --- 6. PHILOSOPHY --- */
+        .philosophy {
+            padding: var(--section-padding);
+        }
+
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .phil-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 12px;
+            border: 1px solid #eee;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .phil-card:hover {
+            border-color: var(--secondary-orange);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+        }
+
+        .phil-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .phil-card p {
+            font-size: 1rem;
+            color: var(--text-light);
+        }
+
+        /* --- 7. CEO SECTION --- */
+        .ceo-section {
+            padding: var(--section-padding);
+            background: #fffaf5;
+        }
+
+        .ceo-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .ceo-image {
+            flex: 1;
+        }
+
+        .ceo-image img {
+            border-radius: 15px;
+            box-shadow: 20px 20px 0 rgba(230, 81, 0, 0.15);
+        }
+
+        .ceo-text {
+            flex: 1.2;
+        }
+
+        .ceo-text h4 {
+            color: var(--primary-orange);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .ceo-text h2 {
+            font-size: 3rem;
+            margin-bottom: 25px;
+        }
+
+        .quote-box {
+            background: var(--white);
+            padding: 20px;
+            border-left: 5px solid var(--primary-orange);
+            margin-top: 30px;
+            font-style: italic;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        /* --- 8. VIDEO SECTION --- */
+        .video-section {
+            padding: 80px 0;
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+
+        .video-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        
+        .video-title { margin-bottom: 40px; }
+        .video-title h2 { color: white; }
+
+        /* --- 9. SERVICES --- */
+        .services {
+            padding: var(--section-padding);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .service-suite {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .service-suite:hover {
+            transform: translateY(-5px);
+        }
+
+        .suite-head {
+            background: var(--gradient-orange);
+            padding: 25px;
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .suite-head i {
+            font-size: 1.8rem;
+        }
+
+        .suite-head h3 {
+            color: white;
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            font-size: 1.3rem;
+        }
+
+        .suite-list {
+            padding: 30px;
+        }
+
+        .suite-list li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+            color: #555;
+        }
+
+        .suite-list li::before {
+            content: '\f00c';
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: var(--primary-orange);
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+            top: 4px;
+        }
+
+        /* --- 10. TESTIMONIALS --- */
+        .testimonials {
+            background: var(--off-white);
+        }
+
+        .checker-row {
+            display: flex;
+            min-height: 500px;
+        }
+
+        .checker-content, .checker-img {
+            flex: 1;
+        }
+
+        .checker-img {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .checker-content {
+            padding: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: var(--white);
+        }
+
+        .checker-content i {
+            font-size: 3rem;
+            color: var(--primary-orange);
+            opacity: 0.3;
+            margin-bottom: 20px;
+        }
+
+        .checker-content blockquote {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--text-dark);
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+
+        /* --- 11. NEW CONTACT FORM SECTION --- */
+        .booking-section {
+            padding: 80px 20px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 40px auto 0;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            background: var(--white);
+            border: 1px solid #eee;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 700;
+            color: var(--text-dark);
+            font-size: 0.9rem;
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .form-group input:focus, 
+        .form-group textarea:focus {
+            border-color: var(--primary-orange);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(230, 81, 0, 0.1);
+        }
+
+        .whatsapp-btn {
+            width: 100%;
+            background: #25D366; /* WhatsApp Green */
+            color: white;
+            border: none;
+            padding: 16px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+        }
+
+        /* --- 12. FOOTER --- */
+        footer {
+            background: var(--gradient-orange);
+            color: var(--white);
+            padding: 80px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-col h3 {
+            color: var(--white);
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .footer-col p {
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .footer-col i {
+            margin-right: 10px;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.2);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: white;
+            margin-right: 10px;
+            transition: 0.3s;
+            font-size: 1.2rem;
+        }
+
+        .social-btn:hover {
+            background: var(--white);
+            color: var(--primary-orange);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 968px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 120px;
+            }
+            .hero-text { padding-right: 0; }
+            .hero-trust { justify-content: center; }
+            .ceo-wrapper { flex-direction: column; }
+            .checker-row, .checker-row.reverse { flex-direction: column; }
+            .checker-img { min-height: 300px; }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            }
+            .nav-links.active { display: flex; }
+            .mobile-toggle { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <a href="https://justvisionseyecentre.com.ng/index.html#"><img src="./testimonial2_files/jusion_vison.png" alt="Just Vision Logo"></a>
+            </div>
+            <div class="mobile-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-links">
+                <a href="https://justvisionseyecentre.com.ng/index.html#about">About</a>
+                <a href="https://justvisionseyecentre.com.ng/index.html#ceo">Team</a>
+                <a href="https://justvisionseyecentre.com.ng/index.html#video-tour">Tour</a>
+                <a href="https://justvisionseyecentre.com.ng/index.html#services">Services</a>
+                <a href="https://justvisionseyecentre.com.ng/index.html#book-now" class="btn">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <div class="hero-text reveal active">
+            <h1>World-Class Eye Care. <br><span class="highlight">Five-Star Experience.</span></h1>
+            <p>Specializing in the early detection, diagnosis, and treatment of eye anomalies. Your vision is our mandate.</p>
+            <a href="https://justvisionseyecentre.com.ng/index.html#book-now" class="btn">Schedule Consultation</a>
+            <div class="hero-trust">
+                <i class="fas fa-shield-alt"></i> NHIS Accredited: LA/1588/S/13
+            </div>
+        </div>
+        <div class="hero-image reveal active">
+            <img src="./testimonial2_files/doctor.png" alt="Just Vision Doctor">
+        </div>
+    </section>
+
+    <div class="stats-strip">
+        <div class="container stats-grid">
+            <div class="stat-box reveal active">
+                <i class="fas fa-history"></i>
+                <h4>Since 1996</h4>
+                <p>Years of Excellence</p>
+            </div>
+            <div class="stat-box reveal active">
+                <i class="fas fa-user-md"></i>
+                <h4>Expert Team</h4>
+                <p>Certified Professionals</p>
+            </div>
+            <div class="stat-box reveal active">
+                <i class="fas fa-microscope"></i>
+                <h4>Modern Tech</h4>
+                <p>State-of-the-Art Equipment</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="philosophy container">
+        <div class="section-header reveal active">
+            <h2>Our Philosophy</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="philosophy-grid">
+            <div class="phil-card reveal active">
+                <h3>Our Mandate</h3>
+                <p>In compliance with WHO Vision 20/20, we are committed to providing quality eye care within a five-star environment.</p>
+            </div>
+            <div class="phil-card reveal active">
+                <h3>Our Mission</h3>
+                <p>To always provide our customers with personalized, cost-effective and professional solutions.</p>
+            </div>
+            <div class="phil-card reveal active">
+                <h3>Core Values</h3>
+                <p>Integrity, Reliability, and Social Responsibility. Our greatest asset is our employees.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ceo" class="ceo-section">
+        <div class="container ceo-wrapper">
+            <div class="ceo-image reveal active">
+                <img src="./testimonial2_files/be464b8e_31c9_4c34_9b7f_3add1cf99e6e.png" alt="Dr Chara Adekunle">
+            </div>
+            <div class="ceo-text reveal active">
+                <h4>Medical Director &amp; CEO</h4>
+                <h2>Dr. Chara Adekunle</h2>
+                <p>Dr. Adekunle is the driving force behind Just Vision. A graduate of the University of Benin (Bsc Opt, 1991; OD, 1998) and Alumnus of Lagos Business School.</p>
+                <div class="quote-box">
+                    "Transacting business with integrity and providing premium quality services are the pillars of Just Vision."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video-tour" class="video-section">
+        <div class="container">
+            <div class="video-title reveal active">
+                <h2>Experience the 5-Star Difference</h2>
+                <p style="color: #ccc;">A tour of our beautiful, welcoming facility.</p>
+            </div>
+            <div class="video-wrapper reveal active">
+                <video controls="" controlslist="nodownload">
+                    <source src="https://cdn1.kingschat.online/uploads/media/5b06f8b21f32a5002faf1a40/SFBMNTNFaHpiL3VITlkxeU1NK1B3Zz09/WhatsApp_Video_2025_12_30_at_2_49_42_PM.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services container">
+        <div class="section-header reveal active">
+            <h2>Scope of Services</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="services-grid">
+            <div class="service-suite reveal active">
+                <div class="suite-head"><i class="fas fa-eye"></i><h3>Clinical Care</h3></div>
+                <ul class="suite-list">
+                    <li>Primary Eye-Care &amp; Refraction</li>
+                    <li>Glaucoma Screening &amp; Management</li>
+                    <li>Intra-ocular Pressure Test</li>
+                    <li>Vision Field Analysis</li>
+                </ul>
+            </div>
+            <div class="service-suite reveal active">
+                <div class="suite-head"><i class="fas fa-glasses"></i><h3>Optical Laboratory</h3></div>
+                <ul class="suite-list">
+                    <li>In-house lab with Automatic Edger</li>
+                    <li>Lens Dispensing (Local &amp; Int'l)</li>
+                    <li>Frames, Sunglasses &amp; Sportswear</li>
+                    <li>Contact Lens Care</li>
+                </ul>
+            </div>
+            <div class="service-suite reveal active">
+                <div class="suite-head"><i class="fas fa-briefcase"></i><h3>Corporate</h3></div>
+                <ul class="suite-list">
+                    <li>Company Staff Screenings</li>
+                    <li>Driver Vision Screening</li>
+                    <li>School Screening Programs</li>
+                    <li>Computer Vision Analysis</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="checker-row">
+            <div class="checker-content">
+                <i class="fas fa-quote-left"></i>
+                <blockquote>"Excellent service with top-notch professionals. The clinic is clean, beautiful, and welcoming."</blockquote>
+                <cite>- Satisfied Patient</cite>
+            </div>
+            <div class="checker-img" style="background-image: url(&#39;https://cdn1.kingschat.online/uploads/media/5b06f8b21f32a5002faf1a40/Y210Zlk0dVpKaFVRK29XNW5LUHhidz09/d523c1cb_5461_4e05_aca8_8c1fd61bcca8.png&#39;);"></div>
+        </div>
+        <div class="checker-row reverse">
+            <div class="checker-img" style="background-image: url(&#39;https://cdn1.kingschat.online/uploads/media/5b06f8b21f32a5002faf1a40/cTlMLzBydjNFVm93NVJ0Wkd5S0ordz09/5a100066_9e0b_434c_aabc_bb13650c28f3.png&#39;);"></div>
+            <div class="checker-content">
+                <i class="fas fa-quote-left"></i>
+                <blockquote>"Truly impressed by the care and professionalism at Just Vision Eye Centre. Beautiful space!"</blockquote>
+                <cite>- Happy Customer</cite>
+            </div>
+        </div>
+    </section>
+
+    <section id="book-now" class="booking-section">
+        <div class="container reveal active">
+            <div class="section-header" style="margin-bottom: 30px;">
+                <h2>Book Your Appointment</h2>
+                <div class="divider"></div>
+                <p style="margin-top: 15px; color: var(--text-light);">Fill out the form below to chat directly with our front desk.</p>
+            </div>
+            
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="clientName">Full Name</label>
+                    <input type="text" id="clientName" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="clientMessage">How can we help you?</label>
+                    <textarea id="clientMessage" rows="4" placeholder="I would like to book an eye test..."></textarea>
+                </div>
+                <button onclick="sendToWhatsapp()" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Ikeja Office</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 7, Odunuga Street,<br>Off Opebi Link Bridge,<br>Ikeja, Lagos State.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Surulere Office</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 7, Adeniran Ogunsanya Street,<br>Surulere,<br>Lagos State.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 0803 303 0008</p>
+                    <p><i class="fas fa-phone"></i> 0816 555 7988</p>
+                    <p><i class="fas fa-phone"></i> 0818 944 0752</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <p>Stay updated with our latest frames and offers.</p>
+                    <div style="display: flex; gap: 10px;">
+                        <a href="https://instagram.com/justvisioneyecentreng" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/justvisioneyecentre" target="_blank" class="social-btn">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2025 Just Vision Limited. RC 1108292. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // WhatsApp Functionality
+        function sendToWhatsapp() {
+            let name = document.getElementById('clientName').value;
+            let message = document.getElementById('clientMessage').value;
+
+            if (name === "" || message === "") {
+                alert("Please fill in both your name and message.");
+                return;
+            }
+
+            // The specific phone number (no plus sign, country code included)
+            let phoneNumber = "2348033030008"; 
+
+            // Format the message
+            let whatsappText = `Hello Just Vision, my name is ${name}. ${message}`;
+            
+            // Encode for URL
+            let encodedMessage = encodeURIComponent(whatsappText);
+            
+            // Create the link
+            let whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+            // Open in new tab
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('active');
+        }
+
+        // Scroll Reveal
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal(); // Trigger once on load
+    </script>
+
+</body></html>
