@@ -5,11 +5,11 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Cataract Surgery",
+    title: "Optical & Digital Glasses",
     description:
-      "Advanced cataract surgery with modern intraocular lens implants performed by experienced specialists.",
-    link: "/cataract-surgery-lagos",
-    icon: "👁",
+      "Premium frames, anti-blue light and UV protection glasses designed for laptops, phones and outdoor use.",
+    link: "/services",
+    icon: "🕶",
   },
   {
     title: "Glaucoma Treatment",
@@ -38,9 +38,9 @@ export default function Services3DSection() {
           </h2>
 
           <p className="text-lg text-brand-muted max-w-2xl mx-auto">
-            At Just Vision Eye Center we provide advanced ophthalmology
-            services including cataract surgery, glaucoma treatment and
-            comprehensive eye examinations in Ikeja and Surulere Lagos.
+            At Just Vision Eye Center, we provide professional eye care
+            services including glaucoma management, comprehensive eye
+            examinations and modern optical solutions in Ikeja and Surulere Lagos.
           </p>
         </div>
 

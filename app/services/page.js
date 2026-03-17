@@ -1,13 +1,14 @@
 export const metadata = {
   title: "Eye Care Services in Ikeja & Surulere Lagos | Just Vision Eye Center",
   description:
-    "Explore our eye care services including cataract surgery, glaucoma treatment, comprehensive eye tests and pediatric eye care in Ikeja and Surulere Lagos.",
+    "Explore our eye care services including glaucoma treatment, comprehensive eye tests, digital glasses and optical solutions in Ikeja and Surulere Lagos.",
   keywords: [
     "Eye Care Services in Ikeja",
     "Eye Clinic Services Lagos",
-    "Cataract Surgery Lagos",
     "Glaucoma Treatment Ikeja",
     "Comprehensive Eye Test Lagos",
+    "Optical Shop Lagos",
+    "Digital Glasses Nigeria",
   ],
 };
 
@@ -33,9 +34,9 @@ export default function ServicesPage() {
           </h1>
 
           <p className="text-lg max-w-3xl mx-auto">
-            Just Vision Eye Center provides advanced ophthalmology and optometry
-            services in Lagos including cataract surgery, glaucoma treatment,
-            comprehensive eye exams and optical solutions.
+            Just Vision Eye Center provides professional eye care services in Lagos
+            including glaucoma management, comprehensive eye examinations,
+            digital glasses and premium optical solutions.
           </p>
         </div>
       </section>
@@ -44,36 +45,41 @@ export default function ServicesPage() {
       <section className="section bg-white">
         <div className="container grid md:grid-cols-3 gap-8">
 
+          {/* OPTICAL */}
           <a
-            href="/cataract-surgery-lagos"
+            href="/services"
             className="p-8 bg-brand-light rounded-2xl shadow-soft hover:shadow-premium transition"
           >
             <h3 className="text-2xl mb-4 font-semibold">
-              Cataract Surgery
+              Optical & Digital Glasses
             </h3>
             <p className="mb-4">
-              Advanced lens replacement surgery using modern technology.
+              Premium frames, anti-blue light lenses and UV protection glasses
+              designed for laptops, phones and outdoor use.
             </p>
             <span className="text-brand-primary font-semibold">
-              Learn More →
+              Explore Optical Shop →
             </span>
           </a>
 
+          {/* GLAUCOMA */}
           <a
             href="/glaucoma-treatment-lagos"
             className="p-8 bg-brand-light rounded-2xl shadow-soft hover:shadow-premium transition"
           >
             <h3 className="text-2xl mb-4 font-semibold">
-              Glaucoma Treatment
+              Glaucoma Management
             </h3>
             <p className="mb-4">
-              Comprehensive eye pressure management and long-term care.
+              Early detection and management of glaucoma through eye pressure
+              testing and optic nerve evaluation to prevent vision loss.
             </p>
             <span className="text-brand-primary font-semibold">
               Learn More →
             </span>
           </a>
 
+          {/* EYE TEST */}
           <a
             href="/eye-test-ikeja"
             className="p-8 bg-brand-light rounded-2xl shadow-soft hover:shadow-premium transition"
@@ -82,10 +88,11 @@ export default function ServicesPage() {
               Comprehensive Eye Test
             </h3>
             <p className="mb-4">
-              Full vision screening, retina exam and glaucoma detection.
+              Full vision screening including refraction, retina examination,
+              glaucoma screening and prescription updates.
             </p>
             <span className="text-brand-primary font-semibold">
-              Learn More →
+              Book Eye Test →
             </span>
           </a>
 
@@ -97,21 +104,14 @@ export default function ServicesPage() {
         <div className="container text-center max-w-4xl">
 
           <h2 className="text-3xl mb-6">
-            Cost Guides
+            Cost Guide
           </h2>
 
           <p className="mb-8">
-            Learn more about the cost of our treatments in Lagos:
+            Learn more about glaucoma treatment pricing in Lagos:
           </p>
 
-          <div className="flex flex-wrap justify-center gap-6">
-
-            <a
-              href="/cost-of-cataract-surgery-in-lagos"
-              className="text-brand-primary font-semibold"
-            >
-              Cost of Cataract Surgery →
-            </a>
+          <div className="flex justify-center">
 
             <a
               href="/cost-of-glaucoma-treatment-in-lagos"
@@ -134,13 +134,13 @@ export default function ServicesPage() {
           </h2>
 
           <p className="mb-6">
-            All procedures are performed or supervised by{" "}
+            Our services are provided by{" "}
             <a
               href="/doctors/dr-clara-adekunle"
               className="text-brand-primary font-semibold"
             >
               Dr. Clara Adekunle
-            </a>, Consultant Ophthalmologist in Lagos.
+            </a>, an experienced eye care specialist in Lagos.
           </p>
 
         </div>
@@ -158,12 +158,27 @@ export default function ServicesPage() {
             Book an appointment at our Ikeja or Surulere branch today.
           </p>
 
-          <a
-            href="/appointment"
-            className="bg-white text-brand-primary px-8 py-4 rounded-2xl font-semibold shadow-premium hover:scale-105 transition"
-          >
-            Book Appointment
-          </a>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+
+            <a
+              href="https://wa.me/2348165557988?text=Hello%20Just%20Vision%20Eye%20Center%20(Ikeja),%0A%0AI%20would%20like%20to%20book%20an%20appointment."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-brand-primary px-8 py-4 rounded-2xl font-semibold shadow-premium hover:scale-105 transition"
+            >
+              Book Ikeja Appointment
+            </a>
+
+            <a
+              href="https://wa.me/2348189440752?text=Hello%20Just%20Vision%20Eye%20Center%20(Surulere),%0A%0AI%20would%20like%20to%20book%20an%20appointment."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-brand-primary transition"
+            >
+              Book Surulere Appointment
+            </a>
+
+          </div>
 
         </div>
       </section>

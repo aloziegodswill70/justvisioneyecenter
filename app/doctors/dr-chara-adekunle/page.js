@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Meet Dr. Clara Adekunle, Consultant Ophthalmologist at Just Vision Eye Center, Lagos. Specialist in cataract surgery, glaucoma treatment and comprehensive eye care.",
   keywords: [
-    "Dr Clara Adekunle",
+    "Dr Chara Adekunle",
     "Ophthalmologist in Ikeja",
     "Best Eye Doctor in Lagos",
     "Cataract Surgeon Lagos",
