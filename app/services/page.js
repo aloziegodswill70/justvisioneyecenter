@@ -34,7 +34,7 @@ export default function ServicesPage() {
           </h1>
 
           <p className="text-lg max-w-3xl mx-auto">
-            Just Vision Eye Center provides professional eye care services in Lagos
+            Just Vision Eye Centre provides professional eye care services in Lagos
             including glaucoma management, comprehensive eye examinations,
             digital glasses and premium optical solutions.
           </p>
@@ -139,7 +139,7 @@ export default function ServicesPage() {
               href="/doctors/dr-clara-adekunle"
               className="text-brand-primary font-semibold"
             >
-              Dr. Clara Adekunle
+              Dr. Chara Adekunle
             </a>, an experienced eye care specialist in Lagos.
           </p>
 

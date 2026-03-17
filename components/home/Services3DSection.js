@@ -38,7 +38,7 @@ export default function Services3DSection() {
           </h2>
 
           <p className="text-lg text-brand-muted max-w-2xl mx-auto">
-            At Just Vision Eye Center, we provide professional eye care
+            At Just Vision Eye Centre, we provide professional eye care
             services including glaucoma management, comprehensive eye
             examinations and modern optical solutions in Ikeja and Surulere Lagos.
           </p>

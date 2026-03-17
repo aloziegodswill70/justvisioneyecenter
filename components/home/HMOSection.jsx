@@ -10,7 +10,7 @@ export default function HMOSection() {
 
         {/* Intro */}
         <p className="text-lg text-brand-muted max-w-2xl mx-auto mb-10 leading-relaxed">
-          Just Vision Eye Center partners with selected Health Maintenance
+          Just Vision Eye Centre partners with selected Health Maintenance
           Organizations (HMOs) to ensure that quality eye care services remain
           accessible and affordable for individuals, families and corporate
           patients across Lagos.

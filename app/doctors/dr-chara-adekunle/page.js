@@ -63,7 +63,7 @@ export default function DoctorProfile() {
 
           <div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Dr. Clara Adekunle
+              Dr. Chara Adekunle
             </h1>
 
             <p className="text-xl text-brand-primary mb-6">
@@ -71,7 +71,7 @@ export default function DoctorProfile() {
             </p>
 
             <p className="mb-8 text-lg max-w-xl">
-              Dr. Clara Adekunle is an experienced ophthalmologist in Ikeja and Surulere, Lagos
+              Dr. Chara Adekunle is an experienced ophthalmologist in Ikeja and Surulere, Lagos
               with expertise in advanced{" "}
               <a href="/cataract-surgery-lagos" className="text-brand-primary font-semibold">
                 cataract surgery

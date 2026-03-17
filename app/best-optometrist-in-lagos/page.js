@@ -158,7 +158,7 @@ export default function OptometristPage() {
           </h2>
 
           <p className="mb-8 text-lg">
-            Visit Just Vision Eye Center for professional vision care.
+            Visit Just Vision Eye Centre for professional vision care.
           </p>
 
           <a

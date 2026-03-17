@@ -11,7 +11,7 @@ export default function AboutPage() {
       <section className="pt-32 pb-20 bg-gradient-to-br from-white to-brand-light">
         <div className="container max-w-4xl text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            About Just Vision Eye Center
+            About Just Vision Eye Centre
           </h1>
           <p className="text-lg">
             Just Vision Eye Center is a modern eye clinic in Ikeja, Lagos,

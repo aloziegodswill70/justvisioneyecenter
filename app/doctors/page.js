@@ -39,7 +39,7 @@ export default function DoctorsPage() {
           />
 
           <h3 className="text-xl font-semibold text-center mb-2">
-            Dr. Clara Adekunle
+            Dr. Chara Adekunle
           </h3>
 
           <p className="text-center text-brand-muted mb-4">

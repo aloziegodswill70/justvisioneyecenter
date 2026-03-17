@@ -1,20 +1,20 @@
 import Link from "next/link";
+import BackToTopButton from "./BackToTopButton";
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-dark text-white pt-20 pb-10">
+    <footer className="bg-brand-dark text-white pt-20 pb-10 relative">
       <div className="container grid md:grid-cols-4 gap-12">
 
         {/* ABOUT */}
         <div>
           <h3 className="text-xl mb-4 font-semibold">
-            Just Vision Eye Center
+            Just Vision Eye Centre
           </h3>
           <p className="text-sm text-gray-300 leading-relaxed">
             A leading eye clinic in Ikeja and Surulere, Lagos, Nigeria
             providing advanced ophthalmology and optometry services
-            including cataract surgery, glaucoma treatment and
-            comprehensive eye examinations.
+            including glaucoma treatment and comprehensive eye examinations.
           </p>
         </div>
 
@@ -24,8 +24,8 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-300 text-sm">
 
             <li>
-              <Link href="/cataract-surgery-lagos" className="hover:text-white">
-                Cataract Surgery
+              <Link href="/services" className="hover:text-white">
+                Optical & Digital Glasses
               </Link>
             </li>
 
@@ -54,12 +54,6 @@ export default function Footer() {
         <div>
           <h4 className="mb-4 font-semibold">Treatment Cost Guides</h4>
           <ul className="space-y-2 text-gray-300 text-sm">
-
-            <li>
-              <Link href="/cost-of-cataract-surgery-in-lagos" className="hover:text-white">
-                Cost of Cataract Surgery
-              </Link>
-            </li>
 
             <li>
               <Link href="/cost-of-glaucoma-treatment-in-lagos" className="hover:text-white">
@@ -110,7 +104,7 @@ export default function Footer() {
           <div className="mt-6 text-sm text-gray-300">
             Ikeja & Surulere, Lagos <br />
             Phone: +234 803 123 4567 <br />
-            Email: info@justvisioneyecenter.com
+            Email: info@justvisioneyecentre.com
           </div>
 
         </div>
@@ -119,10 +113,14 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} Just Vision Eye Center |
+        © {new Date().getFullYear()} Just Vision Eye Centre |
         Best Eye Clinic in Ikeja & Surulere Lagos.
         All Rights Reserved.
       </div>
+
+      {/* ✅ ONLY THIS (CLIENT COMPONENT) */}
+      <BackToTopButton />
+
     </footer>
   );
 }

@@ -33,7 +33,7 @@ export default function SurulerePage() {
           </h1>
 
           <p className="text-lg mb-6">
-            Just Vision Eye Center provides premium eye care services for
+            Just Vision Eye Centre provides premium eye care services for
             patients living in Surulere and surrounding areas in Lagos.
           </p>
 

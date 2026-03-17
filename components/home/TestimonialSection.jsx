@@ -7,8 +7,8 @@ const testimonials = [
   {
     name: "Chinwe A.",
     image: "/images/testimonial2.png",
-    service: "Cataract Surgery Patient",
-    text: "I had cataract surgery at Just Vision Eye Center and the experience was excellent. The doctors explained everything clearly and the procedure was smooth. My vision improved significantly and the staff were very professional and caring.",
+    service: "IOP Patient",
+    text: "I checked my Eye Pressure at Just Vision Eye Centre and the experience was excellent. The doctors explained everything clearly and the procedure was smooth. My vision improved significantly  after they brought the pressure down and the staff were very professional and caring.",
   },
   {
     name: "Tunde O.",

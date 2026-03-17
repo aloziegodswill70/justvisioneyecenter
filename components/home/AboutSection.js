@@ -10,7 +10,7 @@ export default function AboutSection() {
           </h2>
 
           <p className="text-lg text-brand-muted mb-6 leading-relaxed">
-            Just Vision Eye Center is a professional eye clinic in Lagos
+            Just Vision Eye Centre is a professional eye clinic in Lagos
             committed to accurate diagnosis, modern treatment and premium
             optical care. Our experienced specialists conduct comprehensive
             eye examinations designed to detect conditions early and protect

@@ -1,7 +1,7 @@
 import ContactSection from "@/components/home/ContactSection";
 
 export const metadata = {
-  title: "Contact Just Vision Eye Center | Eye Clinic in Lagos",
+  title: "Contact Just Vision Eye Centre | Eye Clinic in Lagos",
   description:
     "Contact Just Vision Eye Center in Ikeja and Surulere Lagos. Book eye tests, cataract consultation, glaucoma screening and optical services.",
 };
