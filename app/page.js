@@ -5,7 +5,7 @@ import HeroSection from "@/components/home/HeroSection";
 import AboutSection from "@/components/home/AboutSection";
 import StatsSection from "@/components/home/StatsSection";
 import BranchesSection from "@/components/home/BranchesSection";
-import ServicesSection from "@/components/home/ServicesSection";
+import Services3DSection from "@/components/home/Services3DSection";
 import OpticalShopSection from "@/components/home/OpticalShopSection";
 import HMOSection from "@/components/home/HMOSection";
 import TestimonialSection from "@/components/home/TestimonialSection";
@@ -33,7 +33,7 @@ export default function HomePage() {
       </Reveal>
 
       <Reveal>
-        <ServicesSection />
+        <Services3DSection />
       </Reveal>
 
       <Reveal>

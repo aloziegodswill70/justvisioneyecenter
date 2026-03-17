@@ -1,3 +1,7 @@
+"use client";
+
+import EyeModel from "@/components/three/EyeModel";
+
 export default function HeroSection() {
   return (
     <section className="pt-28 md:pt-36 pb-20 md:pb-24 bg-gradient-to-br from-white to-brand-light">
@@ -62,15 +66,13 @@ export default function HeroSection() {
 
         </div>
 
-        {/* RIGHT IMAGE */}
-        <div className="relative">
-          <img
-            src="/images/hero1.jpeg"
-            alt="Specialist Eye Clinic in Ikeja and Surulere Lagos"
-            className="rounded-3xl shadow-premium"
-          />
+        {/* RIGHT 3D EYE MODEL */}
+        <div className="relative hidden md:block">
+
+          <EyeModel />
 
           <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-brand-primary/10 rounded-full blur-3xl"></div>
+
         </div>
 
       </div>
