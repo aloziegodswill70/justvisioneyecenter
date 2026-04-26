@@ -67,6 +67,25 @@ export default function Footer() {
               </Link>
             </li>
 
+            {/* ✅ NEW SEO PAGES */}
+            <li>
+              <Link href="/best-eye-clinic-near-me" className="hover:text-white">
+                Eye Clinic Near Me
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/google-map-eye-clinic-in-lagos" className="hover:text-white">
+                Eye Clinic on Google Map
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/blue-light-glasses-in-ikeja" className="hover:text-white">
+                Blue Light Glasses Ikeja
+              </Link>
+            </li>
+
           </ul>
         </div>
 
@@ -88,8 +107,8 @@ export default function Footer() {
             </li>
 
             <li>
-              <Link href="/doctors/dr-clara-adekunle" className="hover:text-white">
-                Dr. Clara Adekunle
+              <Link href="/dr-chara-adekunle-best-eye-doctor-in-ikeja" className="hover:text-white">
+                Dr. Chara Adekunle
               </Link>
             </li>
 
@@ -118,7 +137,7 @@ export default function Footer() {
         All Rights Reserved.
       </div>
 
-      {/* ✅ ONLY THIS (CLIENT COMPONENT) */}
+      {/* BACK TO TOP */}
       <BackToTopButton />
 
     </footer>
