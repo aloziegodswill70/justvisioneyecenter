@@ -19,7 +19,7 @@ export const metadata = {
   },
 
   description:
-    "Just Vision Eye Center is a leading eye clinic in Ikeja and Surulere, Lagos, Nigeria offering cataract surgery, glaucoma treatment, pediatric eye care, comprehensive eye tests and advanced ophthalmology services.",
+    "Just Vision Eye Center is a leading eye clinic in Ikeja and Surulere, Lagos, Nigeria offering cataract Diagnosis, glaucoma treatment, pediatric eye care, comprehensive eye tests and advanced ophthalmology services.",
 
   keywords: [
     "Eye Clinic in Lagos",
@@ -73,6 +73,15 @@ export const metadata = {
     images: ["/og-image.jpg"],
   },
 
+  /* ✅ ONLY ADDITION (FAVICON) */
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/favicon.ico",
+  },
+
   verification: {
     google: "google-site-verification-code", // Replace when available
   },
@@ -101,8 +110,8 @@ const structuredData = {
 
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.9", // Use real Google rating
-    reviewCount: "87"   // Use real review count
+    ratingValue: "4.9",
+    reviewCount: "87"
   },
 
   sameAs: [

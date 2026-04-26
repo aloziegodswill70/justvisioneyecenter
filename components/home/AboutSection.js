@@ -3,13 +3,25 @@ export default function AboutSection() {
     <section className="section bg-white">
       <div className="container grid md:grid-cols-2 gap-16 items-center">
 
-        {/* LEFT CONTENT */}
+        {/* LEFT IMAGE */}
+        <div className="relative">
+          <img
+            src="/images/drclara.jpeg"
+            alt="Eye examination at Just Vision Eye Centre Lagos"
+            className="rounded-3xl shadow-premium w-full object-cover"
+          />
+
+          {/* Accent Glow */}
+          <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-brand-primary/10 rounded-full blur-3xl"></div>
+        </div>
+
+        {/* RIGHT CONTENT */}
         <div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Trusted Eye Care in Ikeja & Surulere, Lagos
           </h2>
 
-          <p className="text-lg text-brand-muted mb-6 leading-relaxed">
+          <p className="text-lg text-brand-muted mb-6 leading-relaxed text-justify">
             Just Vision Eye Centre is a professional eye clinic in Lagos
             committed to accurate diagnosis, modern treatment and premium
             optical care. Our experienced specialists conduct comprehensive
@@ -17,15 +29,15 @@ export default function AboutSection() {
             your long-term vision.
           </p>
 
-          <p className="text-lg text-brand-muted mb-6 leading-relaxed">
-            We diagnose and manage early <strong>glaucoma</strong>, 
-            <strong> cataract</strong>, 
-            <strong> diabetic retinopathy</strong> and 
+          <p className="text-lg text-brand-muted mb-6 leading-relaxed text-justify">
+            We diagnose and manage early <strong>glaucoma</strong>,
+            <strong> cataract</strong>,
+            <strong> diabetic retinopathy</strong> and
             <strong> hypertensive retinopathy</strong> using modern
             diagnostic equipment and clinical expertise.
           </p>
 
-          <p className="text-lg text-brand-muted leading-relaxed">
+          <p className="text-lg text-brand-muted leading-relaxed text-justify">
             Beyond medical care, we provide premium optical solutions including
             <strong> anti-blue light glasses</strong> for laptop and phone use,
             <strong> anti-UV protective glasses</strong> for outdoor vision safety,
@@ -34,7 +46,12 @@ export default function AboutSection() {
           </p>
         </div>
 
-        {/* RIGHT HIGHLIGHT BOX */}
+      </div>
+
+      {/* CORE SERVICES WITH IMAGE */}
+      <div className="container mt-20 grid md:grid-cols-2 gap-16 items-center">
+
+        {/* LEFT CONTENT */}
         <div className="bg-brand-light p-10 rounded-3xl shadow-soft">
           <h3 className="text-2xl font-semibold mb-6">
             Our Core Services
@@ -50,6 +67,17 @@ export default function AboutSection() {
           </ul>
         </div>
 
+        {/* RIGHT IMAGE */}
+        <div className="relative">
+          <img
+            src="/images/justvision.jpeg"
+            alt="Digital glasses and premium frames"
+            className="rounded-3xl shadow-premium w-full object-cover"
+          />
+
+          <div className="absolute -top-6 -right-6 w-28 h-28 bg-brand-primary/10 rounded-full blur-3xl"></div>
+        </div>
+
       </div>
 
       {/* BRANCH LOCATIONS */}
@@ -63,6 +91,12 @@ export default function AboutSection() {
 
           {/* IKEJA BRANCH */}
           <div className="p-8 bg-brand-light rounded-2xl shadow-soft">
+            <img
+              src="/images/justvision1.jpeg"
+              alt="Just Vision Eye Centre Ikeja Branch"
+              className="rounded-xl mb-4 w-full h-48 object-cover"
+            />
+
             <h4 className="text-xl font-semibold mb-3">
               Ikeja Branch
             </h4>
@@ -85,6 +119,12 @@ export default function AboutSection() {
 
           {/* SURULERE BRANCH */}
           <div className="p-8 bg-brand-light rounded-2xl shadow-soft">
+            <img
+              src="/images/hero1.jpeg"
+              alt="Just Vision Eye Centre Surulere Branch"
+              className="rounded-xl mb-4 w-full h-48 object-cover"
+            />
+
             <h4 className="text-xl font-semibold mb-3">
               Surulere Branch
             </h4>

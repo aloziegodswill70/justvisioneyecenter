@@ -2,37 +2,36 @@
 
 export default function HeroSection() {
   return (
-    <section className="pt-28 md:pt-36 pb-20 md:pb-24 bg-gradient-to-br from-white to-brand-light">
-      <div className="container grid md:grid-cols-2 gap-14 md:gap-16 items-center">
+    <section className="pt-28 md:pt-36 pb-16 md:pb-24 bg-gradient-to-br from-white to-brand-light">
+      <div className="container grid md:grid-cols-2 gap-10 md:gap-16 items-center">
 
         {/* LEFT CONTENT */}
-        <div>
+        <div className="text-center md:text-left">
 
           {/* Professional Badge */}
-          <div className="mb-6">
-            <span className="px-4 py-2 bg-brand-primary/10 text-brand-primary text-sm rounded-full font-medium">
+          <div className="mb-5 flex justify-center md:justify-start">
+            <span className="px-4 py-2 bg-brand-primary/10 text-brand-primary text-xs sm:text-sm rounded-full font-medium">
               Trusted Eye Clinic in Lagos
             </span>
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.15] mb-6">
-            Comprehensive & Specialist <br />
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-5">
+            Comprehensive & Specialist{" "}
             <span className="text-brand-primary">
               Eye Care
-            </span>
-            <br />
+            </span>{" "}
             in Ikeja & Surulere
           </h1>
 
           {/* Subtext */}
-          <p className="text-base sm:text-lg md:text-xl text-brand-muted mb-8 md:mb-10 max-w-xl leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-brand-muted mb-7 md:mb-10 max-w-xl mx-auto md:mx-0 leading-relaxed text-justify md:text-left">
             Welcome to Just Vision Eye Centre. We provide professional eye
             examinations, glaucoma management, digital glasses and modern
             optical care — delivered with precision and patient-focused care.
           </p>
 
-          {/* NEW APP-LIKE CTA */}
+          {/* APP-LIKE CTA */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
 
             {/* IKEJA BUTTON */}
@@ -42,12 +41,14 @@ export default function HeroSection() {
               rel="noopener noreferrer"
               className="group flex items-center gap-4 bg-white p-4 rounded-2xl shadow-soft hover:shadow-premium transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-green-100 text-green-600 text-xl">
+              <div className="w-11 h-11 flex items-center justify-center rounded-xl bg-green-100 text-green-600 text-lg">
                 💬
               </div>
 
               <div className="text-left">
-                <p className="text-sm text-brand-muted">Book Appointment</p>
+                <p className="text-xs sm:text-sm text-brand-muted">
+                  Book Appointment
+                </p>
                 <p className="font-semibold text-brand-dark">
                   Ikeja Branch
                 </p>
@@ -61,12 +62,14 @@ export default function HeroSection() {
               rel="noopener noreferrer"
               className="group flex items-center gap-4 bg-white p-4 rounded-2xl shadow-soft hover:shadow-premium transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-brand-primary/10 text-brand-primary text-xl">
+              <div className="w-11 h-11 flex items-center justify-center rounded-xl bg-brand-primary/10 text-brand-primary text-lg">
                 📍
               </div>
 
               <div className="text-left">
-                <p className="text-sm text-brand-muted">Book Appointment</p>
+                <p className="text-xs sm:text-sm text-brand-muted">
+                  Book Appointment
+                </p>
                 <p className="font-semibold text-brand-dark">
                   Surulere Branch
                 </p>
@@ -76,7 +79,7 @@ export default function HeroSection() {
           </div>
 
           {/* TRUST INDICATORS */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 text-sm text-brand-muted">
+          <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-3 sm:gap-6 text-xs sm:text-sm text-brand-muted">
             <span>✔ Experienced Specialists</span>
             <span>✔ Modern Diagnostic Equipment</span>
             <span>✔ Two Convenient Locations</span>
@@ -86,7 +89,6 @@ export default function HeroSection() {
 
         {/* RIGHT IMAGE */}
         <div className="relative">
-
           <img
             src="/images/hero1.jpeg"
             alt="Specialist Eye Clinic in Ikeja and Surulere Lagos"
@@ -95,7 +97,6 @@ export default function HeroSection() {
 
           {/* Accent Glow */}
           <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-brand-primary/10 rounded-full blur-3xl"></div>
-
         </div>
 
       </div>
