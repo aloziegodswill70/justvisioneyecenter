@@ -79,6 +79,62 @@ export default function OpticalShopSection() {
 
         </div>
 
+        {/* ✅ NEW IMAGE SECTION */}
+        <div className="grid md:grid-cols-3 gap-8 mt-16">
+
+          {/* IMAGE 1 */}
+          <div className="bg-white rounded-3xl overflow-hidden shadow-soft hover:shadow-premium transition">
+            <img
+              src="/images/optical1.png"
+              alt="Premium eyeglasses frames"
+              className="w-full h-56 object-cover"
+            />
+            <div className="p-6">
+              <h4 className="font-semibold mb-2">
+                Premium Frames Collection
+              </h4>
+              <p className="text-sm text-brand-muted">
+                Stylish, durable and comfortable frames for everyday use.
+              </p>
+            </div>
+          </div>
+
+          {/* IMAGE 2 */}
+          <div className="bg-white rounded-3xl overflow-hidden shadow-soft hover:shadow-premium transition">
+            <img
+              src="/images/optical2.png"
+              alt="Blue light glasses for digital devices"
+              className="w-full h-56 object-cover"
+            />
+            <div className="p-6">
+              <h4 className="font-semibold mb-2">
+                Customize Optical Frame
+              </h4>
+              <p className="text-sm text-brand-muted">
+                For screen use and proper anti-blue light lens fits.
+              </p>
+            </div>
+          </div>
+
+          {/* IMAGE 3 */}
+          <div className="bg-white rounded-3xl overflow-hidden shadow-soft hover:shadow-premium transition">
+            <img
+              src="/images/optical3.png"
+              alt="Contact lenses and eye care accessories"
+              className="w-full h-56 object-cover"
+            />
+            <div className="p-6">
+              <h4 className="font-semibold mb-2">
+                Premium Frame
+              </h4>
+              <p className="text-sm text-brand-muted">
+                Comfortable frame for clear and natural vision.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
   );

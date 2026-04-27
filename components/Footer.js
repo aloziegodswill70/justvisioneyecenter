@@ -67,7 +67,7 @@ export default function Footer() {
               </Link>
             </li>
 
-            {/* ✅ NEW SEO PAGES */}
+            {/* EXISTING SEO */}
             <li>
               <Link href="/best-eye-clinic-near-me" className="hover:text-white">
                 Eye Clinic Near Me
@@ -83,6 +83,31 @@ export default function Footer() {
             <li>
               <Link href="/blue-light-glasses-in-ikeja" className="hover:text-white">
                 Blue Light Glasses Ikeja
+              </Link>
+            </li>
+
+            {/* ✅ NEW 4 PAGES */}
+            <li>
+              <Link href="/5-best-eye-clinic-in-lagos" className="hover:text-white">
+                5 Best Eye Clinics in Lagos
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/no-one-best-eye-clinic-in-lagos" className="hover:text-white">
+                No. 1 Best Eye Clinic in Lagos
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/best-eye-doctor-ikeja" className="hover:text-white">
+                Best Eye Doctor in Ikeja
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/best-eye-doctor-in-lagos" className="hover:text-white">
+                Best Eye Doctor in Lagos
               </Link>
             </li>
 

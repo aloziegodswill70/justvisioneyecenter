@@ -32,6 +32,7 @@ export default function Services3DSection() {
     <section className="section bg-brand-light">
       <div className="container">
 
+        {/* HEADER */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
             Specialist Eye Care Services
@@ -44,7 +45,8 @@ export default function Services3DSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-10">
+        {/* SERVICES CARDS */}
+        <div className="grid md:grid-cols-3 gap-10 mb-20">
 
           {services.map((service, index) => (
             <motion.div
@@ -75,6 +77,65 @@ export default function Services3DSection() {
               </Link>
             </motion.div>
           ))}
+
+        </div>
+
+        {/* ✅ NEW MEDICAL IMAGE SECTION */}
+        <div className="grid md:grid-cols-3 gap-8">
+
+          {/* OPHTHALMIC INSTRUMENT */}
+          <div className="bg-white rounded-3xl overflow-hidden shadow-soft hover:shadow-premium transition">
+            <img
+              src="/images/slitlamp.jpeg"
+              alt="Modern ophthalmic diagnostic equipment"
+              className="w-full h-56 object-cover"
+            />
+            <div className="p-6">
+              <h4 className="font-semibold mb-2">
+                Advanced Diagnostic Equipment
+              </h4>
+              <p className="text-sm text-brand-muted">
+                We use modern ophthalmic instruments for accurate diagnosis and
+                early detection of eye conditions.
+              </p>
+            </div>
+          </div>
+
+          {/* FUNDUS IMAGE 1 */}
+          <div className="bg-white rounded-3xl overflow-hidden shadow-soft hover:shadow-premium transition">
+            <img
+              src="/images/diabetes.png"
+              alt="Retina fundus image showing eye health assessment"
+              className="w-full h-56 object-cover"
+            />
+            <div className="p-6">
+              <h4 className="font-semibold mb-2">
+                Retina Examination
+              </h4>
+              <p className="text-sm text-brand-muted">
+                Detailed fundus imaging helps detect glaucoma, diabetic
+                retinopathy and other retinal conditions early.
+              </p>
+            </div>
+          </div>
+
+          {/* FUNDUS IMAGE 2 */}
+          <div className="bg-white rounded-3xl overflow-hidden shadow-soft hover:shadow-premium transition">
+            <img
+              src="/images/glaucoma.png"
+              alt="Fundus scan for glaucoma and retina monitoring"
+              className="w-full h-56 object-cover"
+            />
+            <div className="p-6">
+              <h4 className="font-semibold mb-2">
+                Glaucoma Monitoring
+              </h4>
+              <p className="text-sm text-brand-muted">
+                Continuous retina and optic nerve monitoring ensures long-term
+                protection of your vision.
+              </p>
+            </div>
+          </div>
 
         </div>
 
